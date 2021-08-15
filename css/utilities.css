@@ -1,0 +1,16 @@
+.flx {
+  display: flex;
+}
+
+.fcol {
+  flex-direction: column;
+}
+
+.btn {
+  padding: 1vh;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
