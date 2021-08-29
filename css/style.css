@@ -4,6 +4,7 @@
   --primary-color: #0065fc;
   --secondary-color: #deebff;
   --light-gray: #f2f2f2;
+  --results-box-height: 90vh;
 }
 
 * {
@@ -35,36 +36,85 @@ main {
   min-height: 70vh;
 }
 
-.accomodation-results {
-  border: greenyellow 2px solid;
+.stars {
   display: flex;
 }
 
+.accomodation-results {
+  display: flex;
+}
+
+.accomodation-results h3,
+.accomodation-results h4 {
+  font-weight: bolder;
+}
+
+.accomodation-results p {
+  margin-top: 8px;
+  font-size: small;
+}
+
 .raw-results {
-  border: purple 1px solid;
+  border-radius: 16px;
+  border: none;
   background-color: var(--light-gray);
   margin: 1rem;
-  height: 70vh;
+  height: var(--results-box-height);
   width: 65%;
+}
+
+.raw-results .title {
+  margin: 20px 0 10px 0;
 }
 
 .raw-results .results-cards {
   display: flex;
   flex-wrap: wrap;
   height: 70vh;
+  justify-content: space-between;
 }
 
 .card-type-1 {
-  border: yellow 1px solid;
-  width: 30%;
-  height: 25vh;
+  width: 31%;
+  height: 30vh;
+  border-radius: 16px;
+  background-color: white;
+  box-sizing: content-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-type-1-picture {
+  height: 50%;
+  width: 95%;
+  margin: 5px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: aqua;
+}
+
+.card-type-1-picture img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  object-fit: cover;
+}
+
+.card-type-1-text {
+  margin: 8px;
+}
+
+.stars {
+  font-size: smaller;
+  margin-top: 8px;
 }
 
 .most-popular-results {
-  border: purple 1px solid;
+  border-radius: 16px;
+  border: none;
   background-color: var(--light-gray);
   margin: 1rem;
-  height: 70vh;
+  height: var(--results-box-height);
   width: 35%;
 }
 
@@ -72,12 +122,42 @@ main {
   display: flex;
   flex-direction: column;
   height: 70vh;
+  justify-content: space-between;
+}
+
+.most-popular-results .title {
+  margin: 20px 0 10px 0;
 }
 
 .card-type-2 {
-  border: yellow 1px solid;
   width: 90%;
   height: 20vh;
+  border-radius: 16px;
+  background-color: white;
+  box-sizing: content-box;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-type-2-picture {
+  height: 90%;
+  width: 35%;
+  margin: 5px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: aqua;
+}
+
+.card-type-2-picture img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  object-fit: cover;
+}
+
+.card-type-2-text {
+  margin: 8px;
 }
 
 .activity-cards {
@@ -90,7 +170,7 @@ main {
 }
 
 .activity-column {
-  width: 25%;
+  width: 23%;
   height: 70vh;
 }
 

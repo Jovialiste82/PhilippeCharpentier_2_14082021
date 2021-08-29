@@ -14,3 +14,11 @@
 .btn-primary {
   background-color: var(--primary-color);
 }
+
+.blue {
+  color: var(--primary-color);
+}
+
+.gray {
+  color: darkgrey;
+}

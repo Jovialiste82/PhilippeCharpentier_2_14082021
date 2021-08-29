@@ -16,8 +16,8 @@
     <title>Reservia</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <div class="container">
         <div class="logo">logo</div>
         <nav>
           <ul>
@@ -26,17 +26,17 @@
           </ul>
           <a>S'inscrire</a>
         </nav>
-      </header>
-      <main>
+      </div>
+    </header>
+    <main>
+      <div class="container">
         <section class="search-parameters">
           <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
           <p>En plein centre-ville ou en pleine nature</p>
 
           <form>
             <i class="fas fa-map-marker-alt"></i>
-
             <input type="text" value="Marseille, France" name="city" required />
-
             <button type="submit" class="btn btn-primary">Rechercher</button>
           </form>
           <div class="filters">
@@ -48,29 +48,200 @@
           </div>
           <p>Plus de 500 logements sont disponibles</p>
         </section>
+
         <section class="accomodation-results">
           <div class="raw-results">
-            <div class="title">
-              <h3>Hébergements à Marseille</h3>
+            <div class="container">
+              <div class="title">
+                <h3>Hébergements à Marseille</h3>
+              </div>
+              <div class="results-cards">
+                <div class="card-type-1">
+                  <div class="card-type-1-picture">
+                    <img
+                      src="/assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                      alt="bunk beds"
+                    />
+                  </div>
+                  <div class="card-type-1-text">
+                    <h5>Auberge de la Cannebière</h5>
+                    <p>Nuit à partir de <span>25 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-type-1">
+                  <div class="card-type-1-picture">
+                    <img
+                      src="/assets/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                      alt="twin beds"
+                    />
+                  </div>
+                  <div class="card-type-1-text">
+                    <h5>Hotel du port</h5>
+                    <p>Nuit à partir de <span>52 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-type-1">
+                  <div class="card-type-1-picture">
+                    <img
+                      src="/assets/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                      alt="hotel room"
+                    />
+                  </div>
+                  <div class="card-type-1-text">
+                    <h5>Hotel Les mouettes</h5>
+                    <p>Nuit à partir de <span>76 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-type-1">
+                  <div class="card-type-1-picture">
+                    <img
+                      src="/assets/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                      alt="hotel room"
+                    />
+                  </div>
+                  <div class="card-type-1-text">
+                    <h5>Hotel de la mer</h5>
+                    <p>Nuit à partir de <span>46 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-type-1">
+                  <div class="card-type-1-picture">
+                    <img
+                      src="/assets/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                      alt="bunk beds"
+                    />
+                  </div>
+                  <div class="card-type-1-text">
+                    <h5>Auberge Le Panier</h5>
+                    <p>Nuit à partir de <span>23 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-type-1">
+                  <div class="card-type-1-picture">
+                    <img
+                      src="/assets/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                      alt="hotel room"
+                    />
+                  </div>
+                  <div class="card-type-1-text">
+                    <h5>Hotel chez Amira</h5>
+                    <p>Nuit à partir de <span>96 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="display-more-results">
+                <h4>Afficher plus</h4>
+              </div>
             </div>
-            <div class="results-cards">
-              <div class="card-type-1"></div>
-              <div class="card-type-1"></div>
-              <div class="card-type-1"></div>
-              <div class="card-type-1"></div>
-              <div class="card-type-1"></div>
-              <div class="card-type-1"></div>
-            </div>
-            <div class="display-more-results"></div>
           </div>
           <div class="most-popular-results">
-            <div class="title">
-              <h3>Les plus populaires</h3>
-            </div>
-            <div class="results-cards">
-              <div class="card-type-2"></div>
-              <div class="card-type-2"></div>
-              <div class="card-type-2"></div>
+            <div class="container">
+              <div class="title">
+                <h3>Les plus populaires</h3>
+              </div>
+              <div class="results-cards">
+                <div class="card-type-2">
+                  <div class="card-type-2-picture">
+                    <img
+                      src="/assets/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                      alt="hotel room"
+                    />
+                  </div>
+                  <div class="card-type-2-text">
+                    <h5>Hotel Le soleil du matin</h5>
+                    <p>Nuit à partir de <span>128 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-type-2">
+                  <div class="card-type-2-picture">
+                    <img
+                      src="/assets/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                      alt="hotel room"
+                    />
+                  </div>
+                  <div class="card-type-2-text">
+                    <h5>Au coeur de l'eau</h5>
+                    <h5>Chambres d'hotes</h5>
+                    <p>Nuit à partir de <span>71 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-type-2">
+                  <div class="card-type-2-picture">
+                    <img
+                      src="/assets/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                      alt="hotel room"
+                    />
+                  </div>
+                  <div class="card-type-2-text">
+                    <h5>Hotel Tout bleu et Blanc</h5>
+                    <p>Nuit à partir de <span>68 &euro;</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star blue"></i>
+                      <i class="fas fa-solid fa-star gray"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -93,8 +264,9 @@
             </div>
           </div>
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
+
     <footer>
       <div class="footer-col">
         <h4>A propos</h4>
