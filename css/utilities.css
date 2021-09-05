@@ -1,9 +1,17 @@
+.container {
+  margin: 0 1.7rem;
+}
+
 .flx {
   display: flex;
 }
 
 .fcol {
   flex-direction: column;
+}
+
+.spbtw {
+  justify-content: space-between;
 }
 
 .btn {
@@ -21,4 +29,16 @@
 
 .gray {
   color: darkgrey;
+}
+
+.gutter {
+  margin-bottom: 0.5rem;
+}
+
+.gutter1 {
+  margin-bottom: 1rem;
+}
+
+.gutter2 {
+  margin-bottom: 2rem;
 }
