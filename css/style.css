@@ -125,6 +125,11 @@ header .container {
   font-weight: bolder;
 }
 
+.options:hover {
+  background-color: var(--light-gray);
+  cursor: pointer;
+}
+
 .filters .options {
   display: flex;
   justify-content: space-between;
