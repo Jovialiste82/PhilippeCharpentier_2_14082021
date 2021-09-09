@@ -224,7 +224,7 @@ header .container {
 
 .card-type-1 {
   width: 31%;
-  height: 30vh;
+  height: 28vh;
   border-radius: 16px;
   background-color: white;
   box-sizing: content-box;
@@ -232,7 +232,7 @@ header .container {
 }
 
 .card-type-1-picture {
-  height: 50%;
+  height: 60%;
   margin: 5px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -248,7 +248,7 @@ header .container {
 }
 
 .card-type-1-text {
-  margin: 8px;
+  margin: 10px 8px 8px 8px;
 }
 
 .stars {
@@ -353,7 +353,6 @@ header .container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
-  /* align-items: stretch; */
 }
 
 .card-1 {
@@ -385,14 +384,12 @@ header .container {
 
 .activity-card-text {
   height: 40px;
-  /* margin-top: auto; */
   margin-left: 1rem;
   display: flex;
   align-items: center;
 }
 
 .activity-card-image {
-  /* flex-grow: 1; */
   height: calc(100% - 40px);
 }
 
@@ -410,7 +407,6 @@ footer {
 footer .container {
   height: 25vh;
   display: flex;
-  /* padding: 3rem; */
   align-items: center;
 }
 
