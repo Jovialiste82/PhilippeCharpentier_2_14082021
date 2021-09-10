@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/mq-max-420px.css" />
+    <link rel="stylesheet" href="css/mq-max-1024px.css" />
     <title>Reservia</title>
   </head>
   <body>
@@ -32,6 +34,24 @@
           <a class="nav-item signup">S'inscrire</a>
         </nav>
       </div>
+    </header>
+
+    <header class="max420-header">
+      <div class="top-header">
+        <div class="logo">
+          <img
+            src="https://res.cloudinary.com/dao8tng7z/image/upload/v1631229605/OC-P2-Assets/Reservia_mpgg5s.svg"
+            alt="logo"
+          />
+        </div>
+        <a class="nav-item signup">S'inscrire</a>
+      </div>
+      <nav class="bottom-header">
+        <ul>
+          <li><a href="#hebergements" class="nav-item">Hébergements</a></li>
+          <li><a href="#activites" class="nav-item">Activités</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -57,7 +77,7 @@
             <input type="button" value="Rechercher" id="form-button" />
           </form>
           <div class="filters flx gutter1">
-            <div class="title">Filtres</div>
+            <h3 class="title">Filtres</h3>
 
             <div class="options">
               <div class="filter-icon">

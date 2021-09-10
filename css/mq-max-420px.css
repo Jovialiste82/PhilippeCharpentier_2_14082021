@@ -1,0 +1,169 @@
+/* -------- Smartphones -------- */
+
+@media (max-width: 420px) {
+  header {
+    display: none;
+  }
+
+  main .container {
+    margin: 0;
+  }
+
+  .max420-header {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    margin-bottom: 5rem;
+  }
+
+  .max420-header .logo {
+    padding: 2rem;
+  }
+
+  .max420-header .signup {
+    margin: 2.8rem 2rem;
+    text-align: end;
+  }
+
+  .top-header,
+  .bottom-header ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .max420-header .logo,
+  .max420-header .signup,
+  .bottom-header ul li {
+    width: 50%;
+  }
+
+  .bottom-header ul li {
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid var(--light-gray);
+    padding: 8px;
+  }
+
+  .bottom-header ul li:hover,
+  .bottom-header ul li:focus {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+  }
+
+  /* =================================
+====================================
+====== FILTERS =====================
+====================================
+================================= */
+
+  .search-parameters {
+    margin: 0 1.7rem;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .filters .title {
+    width: 100%;
+  }
+
+  .filters .options {
+    display: flex;
+    box-sizing: content-box;
+    margin: 1rem;
+    border: solid 2px var(--light-gray);
+    border-radius: 50px;
+    height: 2.5rem;
+    font-weight: bolder;
+  }
+
+  .filter-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid 2px var(--secondary-color);
+    border-radius: 50%;
+  }
+
+  .filter-title {
+    margin: 1rem auto;
+  }
+
+  /* =================================
+====================================
+====== RESULTS =====================
+====================================
+================================= */
+
+  #hebergements {
+    margin-bottom: 5rem;
+    min-height: 70vh;
+    width: 100%;
+  }
+
+  .accomodation-results {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .most-popular-results {
+    margin: 0;
+  }
+
+  .most-popular-results {
+    border-radius: 0px;
+    border: none;
+    background-color: var(--light-gray);
+    height: var(--results-box-height);
+    width: 100%;
+  }
+
+  .raw-results {
+    border-radius: 0px;
+    border: none;
+    background-color: white;
+    margin: 1rem 1rem 0 0;
+    height: var(--results-box-height);
+    width: 100%;
+  }
+
+  .raw-results {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-type-1 {
+    width: 100%;
+    height: 23vh;
+    margin-bottom: 2rem;
+  }
+
+  /* =================================
+====================================
+====== ACTIVITIES  =================
+====================================
+================================= */
+
+  .activity-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activity-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 23vh;
+    margin-bottom: 2rem;
+  }
+}
