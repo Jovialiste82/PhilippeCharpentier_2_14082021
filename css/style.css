@@ -19,11 +19,16 @@ body {
 
 main {
   min-height: 70vh;
+  padding: 0 5vh;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.max420-header {
+  display: none;
 }
 
 /* =================================
@@ -33,11 +38,8 @@ a {
 ================================= */
 
 header {
-  height: 10vh;
-  margin-bottom: 4rem;
-}
-
-header .container {
+  height: 13vh;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -62,7 +64,7 @@ header .container {
 }
 
 .header-nav ul li:hover,
-.header-nav ul li:active {
+.header-nav ul li:focus {
   color: var(--primary-color);
   border-top: 3px solid var(--primary-color);
 }
@@ -90,7 +92,7 @@ header .container {
   height: 2.5rem;
 }
 
-.search-parameters form div {
+.form-icon {
   width: 2.5rem;
   display: flex;
   justify-content: center;
@@ -100,6 +102,10 @@ header .container {
   border: solid 1px var(--light-gray);
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
+}
+
+.form-icon2 {
+  display: none;
 }
 
 #form-text-field {
@@ -383,14 +389,14 @@ header .container {
 }
 
 .activity-card-text {
-  height: 40px;
+  height: 60px;
   margin-left: 1rem;
   display: flex;
   align-items: center;
 }
 
 .activity-card-image {
-  height: calc(100% - 40px);
+  height: calc(100% - 60px);
 }
 
 /* =================================
@@ -412,6 +418,7 @@ footer .container {
 
 .footer-col {
   width: 33%;
+  height: 100%;
 }
 
 .footer-col p,

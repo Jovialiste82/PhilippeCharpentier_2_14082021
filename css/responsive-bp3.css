@@ -1,0 +1,174 @@
+@media (max-width: 1023px) {
+  main {
+    padding: 0;
+  }
+
+  main .container {
+    margin: 0;
+  }
+  /* =================================
+====================================
+====== HEADER ======================
+====================================
+================================= */
+
+  header {
+    position: relative;
+  }
+
+  header nav ul {
+    width: 100%;
+  }
+
+  header nav ul li {
+    width: 50%;
+    text-align: center;
+  }
+
+  header nav ul {
+    position: absolute;
+    top: 9vh;
+    left: 0;
+  }
+
+  .header-nav ul li {
+    padding: 3rem 2rem 1rem 2rem;
+    border-bottom: 3px solid var(--light-gray);
+    border-top: 3px solid transparent;
+  }
+
+  .header-nav li a {
+    padding: 0;
+    border: none;
+  }
+
+  .header-nav ul li:hover,
+  .header-nav ul li:focus {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    border-top: 3px solid transparent !important;
+  }
+
+  /* =================================
+====================================
+====== FILTERS =====================
+====================================
+================================= */
+
+  .search-parameters {
+    margin: 8rem 1.7rem 4rem 1.7rem;
+  }
+
+  .filters {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .filters .title {
+    width: 100%;
+  }
+
+  .filters .options {
+    margin: 0.5rem;
+  }
+
+  /* =================================
+====================================
+====== RESULTS =====================
+====================================
+================================= */
+
+  #hebergements {
+    margin-bottom: 5rem;
+    min-height: 70vh;
+    width: 100%;
+    position: relative;
+  }
+
+  #hebergements .container {
+    padding: 0 1.6rem;
+  }
+
+  .accomodation-results {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .most-popular-results {
+    margin: 0;
+  }
+
+  .most-popular-results {
+    border-radius: 0px;
+    border: none;
+    background-color: var(--light-gray);
+    height: var(--results-box-height);
+    width: 100%;
+  }
+
+  .raw-results {
+    border-radius: 0px;
+    border: none;
+    background-color: white;
+    margin: 1rem 1rem 0 0;
+    height: var(--results-box-height);
+    width: 100%;
+  }
+
+  .raw-results {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-type-1 {
+    width: 48%;
+    height: 30vh;
+    margin-bottom: 2rem;
+  }
+
+  .display-more-results {
+    position: absolute;
+    bottom: -30vh;
+    left: 5vw;
+    font-size: larger;
+    font-weight: 900;
+  }
+  /* =================================
+====================================
+====== ACTIVITIES  =================
+====================================
+================================= */
+
+  .activity-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #activites {
+    margin: 40vh 0 5vh 0;
+    padding: 0 1.6rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 23vh;
+    margin-bottom: 0.5rem;
+  }
+
+  /* =================================
+====================================
+====== FOOTER  =====================
+====================================
+================================= */
+}
