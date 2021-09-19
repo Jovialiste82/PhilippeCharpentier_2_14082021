@@ -1,53 +1,64 @@
 /* -------- Smartphones -------- */
 
 @media (max-width: 420px) {
-  header {
-    display: none;
-  }
-
   main .container {
     margin: 0;
   }
 
-  .max420-header {
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    margin-bottom: 5rem;
+  /* =================================
+====================================
+====== HEADER ======================
+====================================
+================================= */
+
+  header {
+    position: relative;
   }
 
-  .max420-header .logo {
-    padding: 2rem;
-  }
-
-  .max420-header .signup {
-    margin: 2.8rem 2rem;
-    text-align: end;
-  }
-
-  .top-header,
-  .bottom-header ul {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .max420-header .logo,
-  .max420-header .signup,
-  .bottom-header ul li {
+  header nav ul li {
     width: 50%;
   }
 
-  .bottom-header ul li {
-    width: 50%;
-    text-align: center;
+  header nav ul {
+    position: absolute;
+    top: 9vh;
+    left: 0;
+  }
+
+  .header-nav a {
+    padding: 3rem 1rem 0 2rem;
+    font-weight: bold;
+  }
+
+  .header-nav ul li {
+    padding: 3rem 2rem 1rem 2rem;
     border-bottom: 3px solid var(--light-gray);
-    padding: 8px;
+    border-top: 3px solid transparent;
   }
 
-  .bottom-header ul li:hover,
-  .bottom-header ul li:focus {
+  .header-nav ul li:hover,
+  .header-nav ul li:focus {
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
+    border-top: 3px solid transparent !important;
+  }
+
+  .fa-magnifying-glass {
+    width: 40px;
+    height: 40px;
+    color: black;
+  }
+  .form-icon2 {
+    width: 2.5rem;
+    display: flex;
+    margin-left: -10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 8px;
   }
 
   /* =================================
@@ -57,12 +68,11 @@
 ================================= */
 
   .search-parameters {
-    margin: 0 1.7rem;
+    margin: 8rem 1.7rem 4rem 1.7rem;
   }
 
   .filters {
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -75,6 +85,9 @@
     margin: 0.5rem;
   }
 
+  #form-button {
+    display: none;
+  }
   /* =================================
 ====================================
 ====== RESULTS =====================
@@ -85,6 +98,11 @@
     margin-bottom: 5rem;
     min-height: 70vh;
     width: 100%;
+    position: relative;
+  }
+
+  #hebergements .container {
+    padding: 0 1.6rem;
   }
 
   .accomodation-results {
@@ -120,10 +138,17 @@
 
   .card-type-1 {
     width: 100%;
-    height: 23vh;
+    height: 30vh;
     margin-bottom: 2rem;
   }
 
+  .display-more-results {
+    position: absolute;
+    bottom: -132vh;
+    left: 5vw;
+    font-size: larger;
+    font-weight: 900;
+  }
   /* =================================
 ====================================
 ====== ACTIVITIES  =================
@@ -135,7 +160,17 @@
     flex-direction: column;
   }
 
-  .activity-card {
+  #activites {
+    margin: 140vh 0 5vh 0;
+    padding: 0 1.6rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
@@ -143,6 +178,38 @@
     flex-direction: column;
     width: 100%;
     height: 23vh;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
+}
+
+/* =================================
+====================================
+====== ACTIVITIES  =================
+====================================
+================================= */
+
+footer {
+  min-height: 60vh;
+}
+
+footer .container,
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer-col {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.footer-col p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col h4 {
+  margin: 0;
+  margin-bottom: 1rem;
 }
