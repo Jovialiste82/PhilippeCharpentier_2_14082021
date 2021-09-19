@@ -37,7 +37,7 @@
   }
 
   .card-type-1 {
-    height: 60vh;
+    height: 80vh;
   }
 
   .card-type-2 {
@@ -93,11 +93,5 @@
   .footer-col h4 {
     margin: 0;
     margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 425px) and (orientation: landscape) {
-  .card-type-1 {
-    height: 80vh;
   }
 }
