@@ -1,10 +1,11 @@
-/* -------- Smartphones -------- */
+@media (max-width: 1023px) {
+  main {
+    padding: 0;
+  }
 
-@media (max-width: 420px) {
   main .container {
     margin: 0;
   }
-
   /* =================================
 ====================================
 ====== HEADER ======================
@@ -15,8 +16,13 @@
     position: relative;
   }
 
+  header nav ul {
+    width: 100%;
+  }
+
   header nav ul li {
     width: 50%;
+    text-align: center;
   }
 
   header nav ul {
@@ -25,15 +31,15 @@
     left: 0;
   }
 
-  .header-nav a {
-    padding: 3rem 1rem 0 2rem;
-    font-weight: bold;
-  }
-
   .header-nav ul li {
     padding: 3rem 2rem 1rem 2rem;
     border-bottom: 3px solid var(--light-gray);
     border-top: 3px solid transparent;
+  }
+
+  .header-nav li a {
+    padding: 0;
+    border: none;
   }
 
   .header-nav ul li:hover,
@@ -41,24 +47,6 @@
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
     border-top: 3px solid transparent !important;
-  }
-
-  .fa-magnifying-glass {
-    width: 40px;
-    height: 40px;
-    color: black;
-  }
-  .form-icon2 {
-    width: 2.5rem;
-    display: flex;
-    margin-left: -10px;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: var(--primary-color);
-    border: solid 1px var(--primary-color);
-    border-radius: 8px;
   }
 
   /* =================================
@@ -85,9 +73,6 @@
     margin: 0.5rem;
   }
 
-  #form-button {
-    display: none;
-  }
   /* =================================
 ====================================
 ====== RESULTS =====================
@@ -137,14 +122,14 @@
   }
 
   .card-type-1 {
-    width: 100%;
+    width: 48%;
     height: 30vh;
     margin-bottom: 2rem;
   }
 
   .display-more-results {
     position: absolute;
-    bottom: -132vh;
+    bottom: -30vh;
     left: 5vw;
     font-size: larger;
     font-weight: 900;
@@ -157,11 +142,11 @@
 
   .activity-cards {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   #activites {
-    margin: 140vh 0 5vh 0;
+    margin: 40vh 0 5vh 0;
     padding: 0 1.6rem;
   }
 
@@ -176,40 +161,14 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 45%;
     height: 23vh;
     margin-bottom: 0.5rem;
   }
-}
 
-/* =================================
+  /* =================================
 ====================================
-====== ACTIVITIES  =================
+====== FOOTER  =====================
 ====================================
 ================================= */
-
-footer {
-  min-height: 60vh;
-}
-
-footer .container,
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-
-.footer-col {
-  width: 90%;
-  margin-bottom: 2rem;
-}
-
-.footer-col p {
-  margin: 0;
-  margin-bottom: 0.5rem;
-}
-
-.footer-col h4 {
-  margin: 0;
-  margin-bottom: 1rem;
 }
