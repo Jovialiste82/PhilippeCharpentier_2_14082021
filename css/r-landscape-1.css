@@ -70,7 +70,7 @@
 ================================= */
 
   footer {
-    height: 90vh;
+    height: auto;
   }
 
   footer .container,
