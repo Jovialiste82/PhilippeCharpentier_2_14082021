@@ -88,7 +88,8 @@ header {
 }
 
 .search-parameters form div,
-.search-parameters form input {
+.search-parameters form input,
+#form-button {
   height: 2.5rem;
 }
 
@@ -123,6 +124,9 @@ header {
   font-weight: bolder;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .filters .title {
@@ -224,13 +228,13 @@ header {
 .raw-results .results-cards {
   display: flex;
   flex-wrap: wrap;
-  height: 70vh;
+  min-height: 70vh;
   justify-content: space-between;
 }
 
 .card-type-1 {
   width: 31%;
-  height: 28vh;
+  min-height: 28vh;
   border-radius: 16px;
   background-color: white;
   box-sizing: content-box;
@@ -298,7 +302,7 @@ header {
 
 .card-type-2 {
   width: 95%;
-  height: 20vh;
+  min-height: 20vh;
   border-radius: 16px;
   background-color: white;
   box-sizing: content-box;
