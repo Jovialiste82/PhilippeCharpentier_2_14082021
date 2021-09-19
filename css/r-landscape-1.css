@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 768px) and (orientation: landscape) {
   /* =================================
 ====================================
 ====== HEADER ======================
@@ -25,15 +25,73 @@
 ====================================
 ================================= */
 
+  .most-popular-results {
+    height: 160vh;
+  }
+
+  .most-popular-results .results-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130vh;
+  }
+
+  .card-type-1 {
+    height: 50vh;
+  }
+
+  .card-type-2 {
+    height: 40vh;
+  }
+
+  .raw-results {
+    height: 240vh;
+  }
+
+  .raw-results .results-cards {
+    display: flex;
+    height: 130vh;
+  }
+
   /* =================================
 ====================================
 ====== ACTIVITIES  =================
 ====================================
 ================================= */
 
+  .activity-card {
+    height: 60vh;
+  }
+
   /* =================================
 ====================================
 ====== FOOTER  =====================
 ====================================
 ================================= */
+
+  footer {
+    min-height: 90vh;
+  }
+
+  footer .container,
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .footer-col {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-col p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-col h4 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 }
