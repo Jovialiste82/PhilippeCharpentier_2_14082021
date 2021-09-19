@@ -95,3 +95,9 @@
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 425px) and (orientation: landscape) {
+  .card-type-1 {
+    height: 80vh;
+  }
+}
