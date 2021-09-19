@@ -234,7 +234,7 @@ header {
 
 .card-type-1 {
   width: 31%;
-  min-height: 28vh;
+  height: 28vh;
   border-radius: 16px;
   background-color: white;
   box-sizing: content-box;
@@ -302,7 +302,7 @@ header {
 
 .card-type-2 {
   width: 95%;
-  min-height: 20vh;
+  height: 20vh;
   border-radius: 16px;
   background-color: white;
   box-sizing: content-box;
