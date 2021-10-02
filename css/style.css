@@ -4,7 +4,7 @@
   --primary-color: #0065fc;
   --secondary-color: #deebff;
   --light-gray: #f2f2f2;
-  --results-box-height: 85vh;
+  --results-box-height: 100vh;
 }
 
 * {
@@ -18,6 +18,7 @@ body {
 }
 
 main {
+  margin-top: 8vh;
   min-height: 70vh;
   padding: 0 5vh;
 }
@@ -53,9 +54,13 @@ header {
   list-style-type: none;
 }
 
-.header-nav ul li,
-.header-nav a {
+.signup {
   padding: 2.9rem 1rem 0 2rem;
+}
+
+header nav ul li {
+  padding: 2.9rem 1rem 0 1.6rem;
+  text-align: center;
   border-top: 3px solid transparent;
 }
 
@@ -228,21 +233,21 @@ header {
 .raw-results .results-cards {
   display: flex;
   flex-wrap: wrap;
-  min-height: 70vh;
   justify-content: space-between;
 }
 
 .card-type-1 {
   width: 31%;
-  height: 28vh;
+  height: 35vh;
   border-radius: 16px;
   background-color: white;
   box-sizing: content-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vh;
 }
 
 .card-type-1-picture {
-  height: 60%;
+  height: 55%;
   margin: 5px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
